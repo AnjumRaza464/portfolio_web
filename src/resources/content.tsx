@@ -2,20 +2,20 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Hafiz",
+  lastName: "Anjum",
+  name: `Hafiz Anjum`,
+  role: "Software Engineer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "hafizanjumraza1993@gmail.com",
+  location: "Asia/Karachi", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Urdu"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
   display: true,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  description: <>Stay updated with insights on software engineering, web development, and emerging technologies</>,
 };
 
 const social: Social = [
@@ -25,25 +25,13 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com",
     essential: true,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-    essential: true,
-  },
-  {
-    name: "Instagram",
-    icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
-    essential: false,
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/hafizanjum",
     essential: true,
   },
   {
@@ -60,23 +48,23 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Transforming ideas into robust software solutions</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">ERP Systems</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Featured work
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work",
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
+    I'm Hafiz, a <Text as="span" size="xl" weight="strong">Software Engineer</Text> with expertise in web development, ERP systems, and <br /> emerging technologies. I bring technical solutions to complex business challenges.
 </>
   ),
 };
@@ -102,9 +90,7 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Hafiz Anjum is a Hyderabad-based Software Engineer with expertise in web development, ERP systems, and emerging technologies. With a B.E. in Software Engineering from Mehran University and multiple industry certifications (CCNA, Network Administration), he brings both technical depth and practical experience. His professional journey spans from web development to ERP support, helping organizations optimize their digital infrastructure and business processes.
       </>
     ),
   },
@@ -113,44 +99,76 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Black and Brown Bakers",
+        timeframe: "October 2020 - Present",
+        role: "Senior Software Support (ERP - Technosys)",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Provided technical support and troubleshooting for ERP system users, ensuring 99% system uptime.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Resolved complex system issues and optimized ERP workflows, reducing response time by 40%.
+          </>,
+          <>
+            Conducted user training sessions to improve system efficiency and user adoption rates.
+          </>,
+          <>
+            Collaborated with developers to implement system enhancements and custom functionalities.
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: "/images/avatar.jpg",
+            alt: "Hafiz Anjum - Senior Software Support",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "ISH LOGIC SOFTWARE HOUSE",
+        timeframe: "2018",
+        role: "Web Developer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Developed responsive web applications using HTML, CSS, and JavaScript technologies.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Collaborated on multiple projects and maintained software solutions for clients.
+          </>,
+          <>
+            Implemented frontend features and integrated with backend systems using APIs.
           </>,
         ],
-        images: [],
+        images: [
+          {
+            src: "/images/avatar.jpg",
+            alt: "Hafiz Anjum - Web Developer",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        company: "Distribution and Soul Business",
+        timeframe: "2017 - 2018",
+        role: "Manager",
+        achievements: [
+          <>
+            Managed business operations, logistics, and distribution activities.
+          </>,
+          <>
+            Coordinated with teams to optimize operational efficiency and customer satisfaction.
+          </>,
+        ],
+        images: [
+          {
+            src: "/images/avatar.jpg",
+            alt: "Hafiz Anjum - Manager",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
     ],
   },
@@ -159,12 +177,16 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Mehran University of Engineering & Technology Jamshoro (MUET)",
+        description: <>B.E (Software Engineering) - 2016 - GPA: 1st Division</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Board of Intermediate and Secondary Education (BISE) Hyderabad",
+        description: <>Intermediate - 2011 - Grade: A</>,
+      },
+      {
+        name: "Board of Intermediate and Secondary Education (BISE) Hyderabad",
+        description: <>Matriculation - 2009 - Grade: A1</>,
       },
     ],
   },
@@ -173,56 +195,88 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
+        title: "Frontend Technologies",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>Proficient in HTML, CSS, Tailwind CSS, and modern JavaScript frameworks for building responsive web applications.</>
         ),
         tags: [
           {
-            name: "Figma",
-            icon: "figma",
+            name: "HTML",
+            icon: "html5",
+          },
+          {
+            name: "CSS",
+            icon: "css",
+          },
+          {
+            name: "JavaScript",
+            icon: "javascript",
+          },
+          {
+            name: "Tailwind CSS",
+            icon: "tailwind",
           },
         ],
-        // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
+            src: "/images/avatar.jpg",
+            alt: "Frontend Technologies",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        title: "Next.js",
+        title: "Backend & ERP Systems",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>Experienced with Python, SQL, and ERP software (Technosys). Strong expertise in database design and system optimization.</>
         ),
         tags: [
           {
-            name: "JavaScript",
-            icon: "javascript",
+            name: "Python",
+            icon: "python",
           },
           {
-            name: "Next.js",
-            icon: "nextjs",
+            name: "SQL",
+            icon: "database",
           },
           {
-            name: "Supabase",
-            icon: "supabase",
+            name: "ERP Software",
+            icon: "database",
           },
         ],
-        // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
+            src: "/images/avatar.jpg",
+            alt: "Backend & ERP Systems",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Emerging Technologies",
+        description: (
+          <>Trained in Generative AI and staying current with latest technological advancements. CCNA certified in networking infrastructure.</>
+        ),
+        tags: [
+          {
+            name: "AI/ML",
+            icon: "sparkles",
+          },
+          {
+            name: "Networking",
+            icon: "network",
+          },
+          {
+            name: "CCNA",
+            icon: "network",
+          },
+        ],
+        images: [
+          {
+            src: "/images/avatar.jpg",
+            alt: "Emerging Technologies",
             width: 16,
             height: 9,
           },
